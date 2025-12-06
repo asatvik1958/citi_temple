@@ -2,32 +2,24 @@
   window.TRANSLATIONS = window.TRANSLATIONS || {};
   window.TRANSLATIONS.about = {
     en: {
-      "about.meta": "About — Sri Venkateswaraswamy Temple",
-      "about.title": "About the Temple",
-      "about.lead": "Sri Venkateswaraswamy Temple, Kallakuru is a sacred place with a long heritage. This page includes history, trustees, and visitor information.",
-      "about.history": `<h2 class="history-heading ramabhadra-regular noto-sans-telugu-700">600 years of history</h2>
-<p>(Local legend)</p>
-<p>The temple has an ancient origin in the Kallakuru region and is believed to have a history spanning over 600 years. Local traditions tell of legends linking its foundation with pilgrimage and devotion.</p>`,
-      "about.events": `<ul>
-  <li>Ugadi</li>
-  <li>Sri Mahalakshmi Jayanti</li>
-  <li>9-day Kalyana Utsav (from Vaishakha month Navami)</li>
-  <li>Narasimha Jayanti</li>
-  <li>Andal Thiru Nakshatram</li>
-  <li>Sri Vaishnava Krishna Ashtami</li>
-  <li>August 15 — Independence Day</li>
-  <li>Devi Navaratri, Vijayadashami</li>
-  <li>Sri Venkateswara Swami's festival day</li>
-</ul>`
-    },
+    "about.meta": "About — Sri Venkateswara Swamy Temple",
+    "about.title": "About the Temple",
+    "about.lead": "Sri Venkateswara Swamy Temple, Kallakuru is a sacred place with a rich heritage. This page displays the history, trustees, and visitor information.",
+    "about.history": "<h2 class=\"history-heading ramabhadra-regular noto-sans-telugu-700\">The Greatness of the Kallakuru Swayambhu Sri Sri Sri Venkateswara Swamy Kshetram with over 600 Years of History</h2>\n<div class=\"cta-pill\" style=\"margin: 20px 0;\">Sthala Puranam (Legend of the Place)</div>\n<p>Among the temples worthy of visitation with ancient history, the Swayambhu Sri Venkateswara Swamy Temple located in Kallakuru village, Kalla Mandal, is one. This temple has a history of over 600 years. A mythological legend exists regarding the incarnation of Sri Venkateswara Swamy near the Padmavathi Koneru (pond), which currently serves the village's protected drinking water scheme.</p>\n<p>It is said that in the past, a Brahmin named Sridhara built an ashram on the Venkatachalam hill at Tirumala and served the Lord of Tirumala. A Gandharva maiden named Padmavathi also used to play the Veena for the Lord on that same hill. One day, Sridhara, captivated by the Gandharva maiden, asked her to marry him. When she refused, Sridhara cursed her. Angered by the curse, she cursed Sridhara in return. When both prayed to the Lord of Tirumala for liberation from their curses, He told them that Padmavathi would appear as a river near the Godavari on the seacoast, and Sridhara would be born as a Brahmin in Karnataka, endure many hardships, go on pilgrimages with disciples, come to her (in the form of the river), and install and worship Him (Sri Venkateswara). Only then would both be liberated from their curses. Thus, after some time, it is said that Sri Venkateswara appeared to Sridhara in a dream at the riverbank, revealing that He had manifested in the form of a stone idol in a Peepal tree (Ashwattha Vruksham) to the west of the river. The next day, Sridhara unearthed the idol, installed it on the east side of the river, and worshipped it, thereby liberating both of them from their curses.</p>\n<p>It is said that after some time, a Vaishnava named Tirumalacharyulu worshipped the Lord at Sridhara's request. At that time, the idol was situated with the waist portion above the ground and the portion below the waist underground; hence, the village came to be known as Kallakuru.</p>\n<p>It is said that the Kalidindi Rangaraju rulers once governed \"Kethalipura,\" now known as Mogalturu, as their capital, and were great devotees of the Divine. One night, the Lord of Tirumala appeared in Rangaraju's dream and ordered him to come to Tirumala. Immediately, Rangaraju set off for Tirumala and rested at Elurupadu village, near Kallakuru, on the way. Tirumalacharyulu, who was performing poojas to Sri Venkateswara in Kallakuru, asked Rangaraju to provide for the temple's maintenance and to visit the Lord. However, it is said that Rangaraju gently rejected Tirumalacharyulu's requests. That same night, when Rangaraju woke up the next day, he had lost sight in both eyes. When he went to Tirumala and prayed to Sri Venkateswara Swamy, one eye's vision was restored. Sri Venkateswara Swamy appeared in Rangaraju's dream in Tirumala and told him that the vision in the second eye would be restored only after visiting Sri Venkateswara Swamy at Kallakuru. Accordingly, Rangaraju came to Kallakuru, visited the Lord, and his vision was restored. It is widely known that the Rangaraju rulers donated 83 acres of land for the maintenance of the Kallakuru Sri Venkateswara Swamy temple.</p>",
+    "about.events": "<div class=\"cta-pill\" style=\"margin: 20px 0;\">Poojas are performed for Sri Swamy according to the Pancharatra Agama</div>\n<ol>\n  <li>Ugadi</li>\n  <li>Sri Mahalakshmi Jayanthi</li>\n  <li>Kalyana Utsavams (Marriage Festivities) for 9 days starting from Vaisakha Masam Navami</li>\n  <li>Nrusimha Jayanthi</li>\n  <li>Andal Thirunakshatram</li>\n  <li>Sri Vaishnava Krishnashtami</li>\n  <li>August 15, Independence Day</li>\n  <li>Devi Navarathrulu, Vijaya Dashami</li>\n  <li>Sri Venkateswara Swamy vari Thirunakshatram</li>\n  <li>Sri Swamy vari Laghu Kalyanam</li>\n  <li>Ksheerabdhi Dwadashi</li>\n  <li>Dhanurmasa Vrata Deeksha</li>\n  <li>Mukkoti Ekadashi</li>\n  <li>Adhyayanotsavams</li>\n  <li>Goda Kalyanam</li>\n  <li>Alwar Thirunakshatram is celebrated with great grandeur every month</li>\n</ol>"
+  },
     te: {
       "about.meta": "గురించి — శ్రీ వెంకటేశ్వర స్వామి దేవాలయం",
       "about.title": "ఆలయము గురించి",
       "about.lead": "శ్రీ వెంకటేశ్వర స్వామి దేవాలయం, కాళ్ళకూరు ఒక పవిత్ర స్థలం మరియు దీర్ఘ వారసత్వాన్ని కలిగి ఉంది. ఈ పేజీ చరిత్ర, ట్రస్టీలు మరియు సందర్శకుల సమాచారం చూపిస్తుంది.",
-      "about.history": `<h2 class="history-heading ramabhadra-regular noto-sans-telugu-700">600 ఏళ్ళ పైబడిన చరిత్ర</h2>
-<p>(స్థల పురాణం)</p>
-<p>దర్శనీయ క్షేత్రాల్లో పురాతన చరిత్ర కలిగిన దేవాలయాల్లో కాళ్ళమండలం, కాళ్ళకూరు గ్రామంలో వేంచేసియున్న స్వయంభూః శ్రీ వేంకటేశ్వర స్వామివారి దేవాలయం ఒకటి. ఈ దేవాలయానికి 600 ఏళ్ళపైబడిన చరిత్ర ఉంది.</p>`,
-      "about.events": `<ul>
+      "about.history": `<h2 class="history-heading ramabhadra-regular noto-sans-telugu-700">600 ఏళ్ళ పైబడిన చరిత్ర కలిగిన కాళ్ళకూరు స్వయంభూః శ్రీశ్రీశ్రీ వేంకటేశ్వర స్వామివారి క్షేత్ర మహాత్మ్యం</h2>
+<div class="cta-pill" style="margin: 20px 0;">స్థల పురాణం</div>
+<p>దర్శనీయ క్షేత్రాల్లో పురాతన చరిత్ర కలిగిన దేవాలయాల్లో కాళ్ళమండలం, కాళ్ళకూరు గ్రామంలో వేంచేసియున్న స్వయంభూః శ్రీ వేంకటేశ్వర స్వామివారి దేవాలయం ఒకటి. ఈ దేవాలయానికి 600 ఏళ్ళపైబడిన చరిత్ర ఉంది. గ్రామంలో రక్షిత మంచినీటి పథకానికి ఉపకరిస్తున్న పద్మావతీ కోనేరు సమీపాన శ్రీ వేంకటేశ్వర స్వామి అవతరించడానికి సంబంధించి ఒక పురాణ గాథ ప్రచారములో ఉంది.</p>
+<p>తిరుమల తిరుపతి వద్ద వేంకటాచలం కొండపై పూర్వం శ్రీధరుడు అనే బ్రాహ్మణుడు ఆశ్రమాన్ని నిర్మించుకుని తిరుమల దేవుడ్ని సేవించేవాడని, ఆ కొండపైనే పద్మావతి కన్యక అనే గంధర్వ కన్య కూడా స్వామి వద్ద వీణగానం చేసేదని చెబుతారు. ఒకనాడు శ్రీధరుడు గంధర్వకన్యపై మోహపరవశుడై వివాహమాడమని ఆమెను కోరగా దానికి ఆమె తిస్కరించడంతో శ్రీధరుడు పద్మావతిని శపించగా తనను శపించాడన్న కోపంతో ఆమె కూడా తిరిగి శ్రీధరుడ్ని శపించిందని చెబుతారు. వారిద్దరూ శాపవిమోచన కోసం తిరుమల దేవున్ని ప్రార్థించగా పద్మావతి నది అనే పేరుతో సముద్రతీరాన గోదావరికి సమీపంలో అవతరిస్తానని, శ్రీధరుడు కర్ణాటకలో బ్రాహ్మణుడుగా జన్మించి అష్టకష్టాలు పడి, శిష్యులతో తీర్థయాత్రలు చేస్తూ నది రూపంలో ఉన్న నీవద్దకు వచ్చి నన్ను (శ్రీవెంకటేశ్వరుడ్ని) ప్రతిష్ఠించి, పూజించిన తరువాత మీ ఇద్దరికీ శాపవిమోచనము కలుగుతుందని చెప్పినట్లు చెబుతారు. ఆ విధముగా కొన్నాళ్ళకు శ్రీధరుడు పద్మావతిని నదీతీరాన శ్రీ వేంకటేశ్వరుడు శ్రీధరుడికి కలలో కన్పించి నదికి పడమటివైపు అశ్వద్ధవృక్షంలో శిలారూపంలో వెలిసినట్లు చెబుతారు. మరునాడు శ్రీధరుడు ఆ విగ్రహాన్ని వెలికితీసి నదికి తూర్పువైపున ప్రతిష్ఠించి ఆరాధించాడని, అలా చేయడంవల్ల వారిద్దరికీ శాపవిమోచనం కలిగిందని చెబుతారు.</p>
+<p>అలా కొంతకాలం జరిగిన తరువాత తిరుమలాచార్యుడు అనే వైష్ణవుడు శ్రీధరుడి కోరికపై స్వామిని సేవిస్తున్నాడని, అప్పట్లో ఆ విగ్రహం నడుముభాగం భూమిపైనా నడుము క్రింద భాగం భూమిలోపల ఉండటంవల్ల అప్పటి నుండి ఆ గ్రామానికి కాళ్ళకూరు అనే పేరు వచ్చినట్లు చెబుతారు</p>
+<p>ప్రస్తుతం మొగల్తూరుగా పిలవబడుతున్న అప్పటి "కేతలీపురాన్ని" ముఖ్య పట్టణంగా ఒకప్పుడు కలిదిండి రంగరాజు ప్రభువులు పాలించేవారని ఆయన గొప్ప దైవభక్తుడని చెబుతారు. ఒక రాత్రి తిరుమల శ్రీ వేంకటేశ్వరుడు రంగరాజు కలలో కన్పించి తిరుమలకు రమ్మని ఆనతిచ్చాడని, ఆ వెంటనే రంగరాజు తిరుమలకు ప్రయాణమై మార్గమధ్యలో కాళ్ళకూరు గ్రామానికి దగ్గరగా ఉన్న ఏలూరుపాడు గ్రామంలో విశ్రాంతి తీసుకున్నప్పుడు కాళ్ళకూరులో వెలిసిన శ్రీ వేంకటేశ్వరునికి పూజలు చేస్తున్న తిరుమలాచార్యుడు, రంగరాజును ఆలయ పోషణ కల్పించాలని, స్వామివారిని దర్శించాలని కోరాడు. కాని తిరుమలాచార్యుడు కోర్కెలను రంగరాజు సున్నితంగా తిరస్కరించినట్లు చెబుతారు. అదే రాత్రి రంగరాజు నిద్రపోయి మరునాడు నిద్రలేచేసరికి అతని రెండు కళ్ళు చూపును కోల్పోవడంతో తిరుమల వెళ్ళి శ్రీ వేంకటేశ్వర స్వామిని వేడుకోగా ఒక కన్నుకు చూపు వచ్చి రెండవ కంటి చూపు కాళ్ళకూరు శ్రీ వేంకటేశ్వరస్వామివారిని దర్శించిన తర్వాత వస్తుందని తిరుమలలో శ్రీ వేంకటేశ్వర స్వామి రంగరాజు కలలో కన్పించి చెప్పగా ఆ ప్రకారం రంగరాజు కాళ్ళకూరు వచ్చి స్వామిని దర్శించుకున్నాడని దీంతో రెండవ కంటికి చూపు వచ్చిందని చెబుతారు. కాళ్ళకూరు శ్రీ వేంకటేశ్వర స్వామి ఆలయ నిర్వహణకు రంగరాజు ప్రభువులు 83 ఎకరాల భూమిని దానం చేసినట్లు ప్రచారంలో కలదు.</p>`,
+      "about.events": `<div class="cta-pill" style="margin: 20px 0;">శ్రీస్వామి వారికి పాంచరాత్ర ఆగమము ప్రకారం పూజలు జరుపబడును</div>
+<ol>
   <li>ఉగాది</li>
   <li>శ్రీ మహాలక్ష్మి జయంతి</li>
   <li>వైశాఖ మాసం నవమి నుండి 9 రోజులు కళ్యాణ ఉత్సవములు</li>
@@ -37,7 +29,14 @@
   <li>ఆగష్టు 15. స్వాతంత్ర్య దినోత్సవము</li>
   <li>దేవీ నవరాత్రులు, విజయ దశమి</li>
   <li>శ్రీ వేంకటేశ్వరస్వామి వారి తిరునక్షత్రం</li>
-</ul>`
+  <li>శ్రీస్వామి వారి లఘు కళ్యాణం</li>
+  <li>క్షీరాబ్ధి ద్వాదశి</li>
+  <li>ధనుర్మాసం వ్రతదీక్ష</li>
+  <li>ముక్కోటి ఏకాదశి</li>
+  <li>అధ్యయనోత్సవములు</li>
+  <li>గోదా కళ్యాణం</li>
+  <li>ప్రతీ నెలా ఆళ్వారుల తిరునక్షత్రము ఎంతో వైభవంగా నిర్వహిస్తారు</li>
+</ol>`
     }
   };
 })();

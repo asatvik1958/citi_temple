@@ -14,34 +14,7 @@
   </head>
   <body>
     <!-- ---------------- NAVBAR ---------------- -->
-    <nav>
-      <div class="nav-inner">
-        <div class="logo"><a href="index.html">Sri Venkateswaraswamy Temple, Kallakuru</a></div>
-
-        <div class="nav-right">
-          <ul>
-            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-            <li><a href="about.html" data-i18n="nav.about">About</a></li>
-
-            <li class="dropdown">
-              <span class="dropdown-label" data-i18n="nav.services">Services ▼</span>
-              <div class="drop-menu">
-                <a href="#" data-i18n="nav.services.darshan">Sevas</a>
-                <a href="#" data-i18n="nav.services.booking">Donations</a>
-              </div>
-            </li>
-
-            <li><a href="#" data-i18n="nav.contact">Contact</a></li>
-          </ul>
-
-          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-          <div class="lang-toggle">
-            <button id="lang-en" class="lang-btn" data-lang="en">EN</button>
-            <button id="lang-te" class="lang-btn" data-lang="te">TE</button>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <!-- ---------------- HERO SECTION ---------------- -->
     <div class="wrap">
@@ -213,20 +186,20 @@
         <h2 data-i18n="services.title">Piligram Services</h2>
       </div>
       <div class="services-grid">
-        <a href="about.html" class="service-card">
+        <a href="seva.html" class="service-card">
           <div class="service-icon">
             <img src="icons/pray.png" alt="Arjitha Sevas" />
           </div>
           <div class="service-label" data-i18n="services.seva">Seva</div>
         </a>    
-        <a href="#" class="service-card">
+        <a href="donations.html" class="service-card">
           <div class="service-icon">
             <img src="icons/book.png" alt="Special Darshan" />
           </div>
           <div class="service-label" data-i18n="services.donation">Donation</div>
         </a>
 
-        <a href="#" class="service-card">
+        <a href="about.html" class="service-card">
           <div class="service-icon">
             <img src="icons/temple.png" alt="Accommodation" />
           </div>
@@ -244,39 +217,7 @@
       </div>
     </section>
 
-    <footer class="site-footer">
-      <div class="footer-container">
-
-        <div class="footer-section">
-          <h4 data-i18n="footer.section1.title">Temple</h4>
-          <ul>
-            <li><a href="about.html" data-i18n="footer.section1.link1">About Temple</a></li>
-            <li><a href="#" data-i18n="footer.section1.link2">History</a></li>
-            <li><a href="#" data-i18n="footer.section1.link3">Trust & Management</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4 data-i18n="footer.section2.title">Services</h4>
-          <ul>
-            <li><a href="#" data-i18n="footer.section2.link1">Darshan</a></li>
-            <li><a href="#" data-i18n="footer.section2.link2">Accommodation</a></li>
-            <li><a href="#" data-i18n="footer.section2.link3">Booking</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4 data-i18n="footer.section3.title">Support</h4>
-          <ul>
-            <li><a href="#" data-i18n="footer.section3.link1">Contact Us</a></li>
-            <li><a href="#" data-i18n="footer.section3.link2">Feedback</a></li>
-            <li><a href="#" data-i18n="footer.section3.link3">FAQ</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom" data-i18n="footer.bottom">© 2025 Sri Venkateswaraswamy Temple, Kallakuru — All Rights Reserved</div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <!-- simple JS for carousel -->
     <script src="translations.index.js"></script>
