@@ -40,6 +40,7 @@
         background-size: 300% 100%;
         background-repeat: repeat-y;
         color: #fff;
+        padding-top: var(--nav-height);
       }
 
       /* ---------------- NAVBAR ------------------ */
@@ -58,6 +59,66 @@
         z-index: 50;
       }
 
+      /* Nav inner layout */
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 18px;
+        letter-spacing: 0.6px;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      /* mobile toggle button (hidden on desktop) */
+      .nav-toggle {
+        display: none;
+        background: transparent;
+        border: 1px solid rgba(255,255,255,0.08);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .lang-toggle {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .lang-btn {
+        background: rgba(255,255,255,0.08);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.12);
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.18s, color 0.18s, transform 0.12s;
+      }
+
+      .lang-btn.active,
+      .lang-btn:hover {
+        background: #fff;
+        color: #b02121;
+        transform: translateY(-1px);
+      }
+
       nav .logo {
         font-size: 22px;
         font-weight: 800;
@@ -69,6 +130,13 @@
         display: flex;
         align-items: center;
         gap: 28px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 8px;
+        display: inline-block;
       }
 
       nav ul li {
@@ -102,7 +170,7 @@
 
       .drop-menu {
         position: absolute;
-        top: 28px;
+        top: calc(100% + 6px);
         left: 0;
         background: rgba(0, 0, 0, 0.28);
         backdrop-filter: blur(6px);
@@ -113,6 +181,7 @@
         pointer-events: none;
         transform: translateY(10px);
         transition: 0.25s ease;
+        z-index: 75;
       }
 
       .drop-menu a {
@@ -127,22 +196,13 @@
         background: rgba(255, 255, 255, 0.12);
       }
 
-      /* MOBILE NAV */
+      /* MOBILE NAV (handled at 900px breakpoint below) */
       @media (max-width: 700px) {
         nav {
-          flex-direction: column;
-          gap: 10px;
           padding: 10px 16px;
-          height: auto;
-        }
-        /* remove extra gap above hero */
-        body {
-          padding-top: 0;
         }
         nav ul {
-          flex-wrap: wrap;
-          gap: 18px;
-          justify-content: center;
+          gap: 14px;
         }
       }
 
@@ -213,6 +273,84 @@
           justify-content: flex-start;
           padding: 0;
           margin: 0;
+        }
+
+        /* Responsive navbar: show hamburger, collapse links */
+        nav {
+          padding: 10px 16px;
+        }
+
+        .nav-toggle {
+          display: inline-block;
+        }
+
+        .logo a {
+          font-size: 16px;
+        }
+
+        .nav-right > ul {
+          display: flex;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(-8px);
+          position: fixed;
+          top: var(--nav-height);
+          right: 0;
+          left: 0;
+          background: rgba(0,0,0,0.95);
+          flex-direction: column;
+          gap: 0;
+          padding: 12px 16px 20px;
+          z-index: 60;
+          max-height: calc(100vh - var(--nav-height));
+          overflow: auto;
+          transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+        }
+
+        nav.mobile-open .nav-right > ul {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .nav-right > ul li {
+          padding: 8px 0;
+        }
+
+        .nav-right > ul li a {
+          display: block;
+          padding: 8px 10px;
+        }
+
+        /* Mobile: make dropdown items flow inside the menu (no absolute positioning)
+           and collapse by default. Tapping the header toggles the .open class. */
+        .drop-menu {
+          position: static;
+          background: transparent;
+          padding: 0 0 12px 12px;
+          border-radius: 0;
+          min-width: auto;
+          opacity: 1;
+          transform: none;
+          pointer-events: auto;
+          display: none;
+        }
+
+        .dropdown.open > .drop-menu {
+          display: block;
+        }
+
+        .drop-menu a {
+          padding: 8px 12px;
+          display: block;
+          color: #fff;
+        }
+
+        .lang-toggle {
+          order: 2;
+          width: 100%;
+          justify-content: center;
+          margin-top: 8px;
         }
 
         .right {
@@ -306,6 +444,19 @@
           align-items: center;
           text-align: center;
           justify-content: center;
+        }
+
+        /* place language toggle into normal flow on small screens */
+        .lang-toggle {
+          position: static !important;
+          top: auto;
+          right: auto;
+          margin: 8px 0;
+          justify-content: center;
+        }
+
+        .lang-btn {
+          padding: 6px 8px;
         }
       }
 

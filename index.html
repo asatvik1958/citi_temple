@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Valley Hindu Temple — Curve Visible</title>
+    <title data-i18n="meta.title">Valley Hindu Temple — Curve Visible</title>
     <link rel="stylesheet" href="index.css">
+    <!-- Load Google Fonts: Inter, Noto Sans Telugu, Ramabhadra -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Telugu:wght@100..900&family=Ramabhadra&display=swap" rel="stylesheet">
     <!-- <style>
       
     </style> -->
@@ -12,54 +15,64 @@
   <body>
     <!-- ---------------- NAVBAR ---------------- -->
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
+      <div class="nav-inner">
+        <div class="logo"><a href="index.html">Sri Venkateswaraswamy Temple, Kallakuru</a></div>
 
-        <li class="dropdown">
-          Services ▼
-          <div class="drop-menu">
-            <a href="#">Darshan</a>
-            <a href="#">Pooja Booking</a>
-            <a href="#">Events</a>
+        <div class="nav-right">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+
+            <li class="dropdown">
+              <span class="dropdown-label" data-i18n="nav.services">Services ▼</span>
+              <div class="drop-menu">
+                <a href="#" data-i18n="nav.services.darshan">Sevas</a>
+                <a href="#" data-i18n="nav.services.booking">Donations</a>
+              </div>
+            </li>
+
+            <li><a href="#" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+
+          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+          <div class="lang-toggle">
+            <button id="lang-en" class="lang-btn" data-lang="en">EN</button>
+            <button id="lang-te" class="lang-btn" data-lang="te">TE</button>
           </div>
-        </li>
-
-        <li>Contact</li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- ---------------- HERO SECTION ---------------- -->
     <div class="wrap">
       <section class="left">
         <div class="inner">
-          <h1>Sri Venkateswaraswamy Temple, Kallakuru</h1>
+          <h1 data-i18n="hero.title">Sri Venkateswaraswamy Temple, Kallakuru</h1>
 
-          <div class="cta-pill">TEMPLE HERITAGE</div>
+          <div class="cta-pill" data-i18n="cta.heritage">TEMPLE HERITAGE</div>
 
-          <p class="lead">
-            Nestled in the serene village of Kallakuru, the Sri Venkateswaraswamy Temple stands as a spiritual landmark and a testament to unwavering devotion. The temple, dedicated to Lord Venkateswara – the preserver and protector, has become a sacred pilgrimage center for devotees across the region.
-The temple’s spiritual journey began with the tireless efforts and devotion of local villagers and well-wishers who envisioned a space where faith, culture, and tradition could flourish. After years of collective dedication, rituals, and auspicious ceremonies, the temple gradually evolved into the divine space it is today.
+          <p class="lead" data-i18n="hero.lead">
+            Nestled in the serene village of Kallakuru, the Sri Venkateswaraswamy Temple stands as a spiritual landmark and a testament to unwavering devotion. The temple, dedicated to Lord Venkateswara – the preserver and protector, has become a sacred pilgrimage center for devotees across the region. The temple’s spiritual journey began with the tireless efforts and devotion of local villagers and well-wishers who envisioned a space where faith, culture, and tradition could flourish. After years of collective dedication, rituals, and auspicious ceremonies, the temple gradually evolved into the divine space it is today.
           </p>
 
-          <div class="cta-pill">DARSHAN TIMINGS</div>
+          <div class="cta-pill" data-i18n="darshan.title">DARSHAN TIMINGS</div>
 
           <!-- NEW SIDE-BY-SIDE THREE-COLUMN TIMINGS -->
           <div class="timing">
             <div class="timing-grid">
               <div class="timing-col">
-                <div class="time-pill">Morning</div>
-                <p>Monday — Friday, 8:00 am – 12:00 pm</p>
+                <div class="time-pill" data-i18n="times.morning.label">Morning</div>
+                <p data-i18n="times.morning.text">Monday — Friday, 8:00 am – 12:00 pm</p>
               </div>
 
               <div class="timing-col">
-                <div class="time-pill">Evening</div>
-                <p>Monday — Friday, 4:30 pm – 8:30 pm</p>
+                <div class="time-pill" data-i18n="times.evening.label">Evening</div>
+                <p data-i18n="times.evening.text">Monday — Friday, 4:30 pm – 8:30 pm</p>
               </div>
 
               <div class="timing-col">
-                <div class="time-pill">Weekend</div>
-                <p>8:30 am – 8:30 pm</p>
+                <div class="time-pill" data-i18n="times.weekend.label">Weekend</div>
+                <p data-i18n="times.weekend.text">8:30 am – 8:30 pm</p>
               </div>
             </div>
           </div>
@@ -68,7 +81,7 @@ The temple’s spiritual journey began with the tireless efforts and devotion of
 
       <aside class="right">
         <img src="hero_banner_desktop.png" alt="Temple artwork" class="hero-img" />
-        <div class="mobile-hero-title">
+        <div class="mobile-hero-title" data-i18n="hero.title">
           Sri Venkateswaraswamy Temple, Kallakuru
         </div>
       </aside>
@@ -77,18 +90,12 @@ The temple’s spiritual journey began with the tireless efforts and devotion of
     <!-- --------- ANNOUNCEMENT BAR (ticker) ---------- -->
     <div class="announcement-bar">
       <div class="announcement-inner">
-        <span class="announcement-label">Announcements</span>
+        <span class="announcement-label" data-i18n="announcement.label">Announcements</span>
         <div class="ticker">
           <div class="ticker-track">
-            <span class="ticker-item">
-              Free health camp this Sunday 9:00 am – 1:00 pm &nbsp;•&nbsp;
-            </span>
-            <span class="ticker-item">
-              Temple closed for maintenance on 15th after 2:00 pm &nbsp;•&nbsp;
-            </span>
-            <span class="ticker-item">
-              Weekly Bhajan every Friday 7:00 pm onwards
-            </span>
+            <span class="ticker-item" data-i18n="announcement.item1">Free health camp this Sunday 9:00 am – 1:00 pm &nbsp;•&nbsp;</span>
+            <span class="ticker-item" data-i18n="announcement.item2">Temple closed for maintenance on 15th after 2:00 pm &nbsp;•&nbsp;</span>
+            <span class="ticker-item" data-i18n="announcement.item3">Weekly Bhajan every Friday 7:00 pm onwards</span>
           </div>
         </div>
       </div>
@@ -103,27 +110,27 @@ The temple’s spiritual journey began with the tireless efforts and devotion of
             <div class="carousel-slide active">
               <img src="carousel/pic1.JPG" alt="PIC 1" />
               <div class="carousel-overlay">
-                <div class="carousel-title">Photo Gallery</div>
-                <div class="carousel-subtitle">Click to view photo Gallery</div>
-                <span class="carousel-cta">View More</span>
+                <div class="carousel-title" data-i18n="carousel.slide0.title">Photo Gallery</div>
+                <div class="carousel-subtitle" data-i18n="carousel.slide0.subtitle">Click to view photo Gallery</div>
+                <span class="carousel-cta" data-i18n="carousel.cta">View More</span>
               </div>
             </div>
 
             <div class="carousel-slide">
               <img src="carousel/pic2.JPG" alt="Festival" />
               <div class="carousel-overlay">
-                <div class="carousel-title">Festival</div>
-                <div class="carousel-subtitle">Held on 26/11/2025</div>
-                <span class="carousel-cta">View More</span>
+                <div class="carousel-title" data-i18n="carousel.slide1.title">Festival</div>
+                <div class="carousel-subtitle" data-i18n="carousel.slide1.subtitle">Held on 26/11/2025</div>
+                <span class="carousel-cta" data-i18n="carousel.cta">View More</span>
               </div>
             </div>
 
             <div class="carousel-slide">
               <img src="carousel/pic3.JPG" alt="PIC 3" />
               <div class="carousel-overlay">
-                <div class="carousel-title">Recent</div>
-                <div class="carousel-subtitle">Recent</div>
-                <span class="carousel-cta">View More</span>
+                <div class="carousel-title" data-i18n="carousel.slide2.title">Recent</div>
+                <div class="carousel-subtitle" data-i18n="carousel.slide2.subtitle">Recent</div>
+                <span class="carousel-cta" data-i18n="carousel.cta">View More</span>
               </div>
             </div>
           </div>
@@ -154,84 +161,46 @@ The temple’s spiritual journey began with the tireless efforts and devotion of
 
         <!-- Latest Updates -->
         <aside class="updates-card">
-          <h3>Latest Updates</h3>
+          <h3 data-i18n="updates.title">Latest Updates</h3>
           <ul class="updates-list">
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                <span class="badge-new">New</span><br />
-                Special Entry Darshan (₹300) tickets for February&nbsp;2026 will
-                be available for booking from 25.11.2025, 10:00&nbsp;AM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item0"><span class="badge-new">New</span><br />Special Entry Darshan (₹300) tickets for February&nbsp;2026 will be available for booking from 25.11.2025, 10:00&nbsp;AM. <a href="#">Click here</a></div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                <span class="badge-new">New</span><br />
-                Tirumala and Tirupati accommodation quota for February&nbsp;2026
-                will be released on 25.11.2025, 03:00&nbsp;PM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item1"><span class="badge-new">New</span><br />Tirumala and Tirupati accommodation quota for February&nbsp;2026 will be released on 25.11.2025, 03:00&nbsp;PM. <a href="#">Click here</a></div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                Senior citizens / differently abled quota for January&nbsp;2026
-                has been fully booked.
-              </div>
+              <div class="updates-content" data-i18n="updates.item2">Senior citizens / differently abled quota for January&nbsp;2026 has been fully booked.</div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-)
-                tickets for December&nbsp;2025 will be available from
-                25.11.2025, 10:00&nbsp;AM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item3">Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-) tickets for December&nbsp;2025 will be available from 25.11.2025, 10:00&nbsp;AM. <a href="#">Click here</a></div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-)
-                tickets for December&nbsp;2025 will be available from
-                25.11.2025, 10:00&nbsp;AM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item4">Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-) tickets for December&nbsp;2025 will be available from 25.11.2025, 10:00&nbsp;AM. <a href="#">Click here</a></div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-)
-                tickets for December&nbsp;2025 will be available from
-                25.11.2025, 10:00&nbsp;AM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item5">Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-) tickets for December&nbsp;2025 will be available from 25.11.2025, 10:00&nbsp;AM. <a href="#">Click here</a></div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-)
-                tickets for December&nbsp;2025 will be available from
-                25.11.2025, 10:00&nbsp;AM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item6">Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-) tickets for December&nbsp;2025 will be available from 25.11.2025, 10:00&nbsp;AM. <a href="#">Click here</a></div>
             </li>
 
             <li class="updates-item">
               <span class="updates-dot"></span>
-              <div class="updates-content">
-                Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-)
-                tickets for December&nbsp;2025 will be available from
-                25.11.2025, 10:00&nbsp;AM.
-                <a href="#">Click here</a>
-              </div>
+              <div class="updates-content" data-i18n="updates.item7">Sri Padmavathi Ammavari Temple special entry Darshan (₹200/-) tickets for December&nbsp;2025 will be available from 25.11.2025, 10:00&nbsp;AM. <a href="#">Click here</a></div>
             </li>
           </ul>
         </aside>
@@ -241,34 +210,34 @@ The temple’s spiritual journey began with the tireless efforts and devotion of
     <!-- NEW SECTION BELOW HERO -->
     <section class="below">
       <div class="below-inner">
-        <h2>Piligram Services</h2>
+        <h2 data-i18n="services.title">Piligram Services</h2>
       </div>
       <div class="services-grid">
-        <a href="#" class="service-card">
+        <a href="about.html" class="service-card">
           <div class="service-icon">
             <img src="icons/pray.png" alt="Arjitha Sevas" />
           </div>
-          <div class="service-label">Seva</div>
+          <div class="service-label" data-i18n="services.seva">Seva</div>
         </a>    
         <a href="#" class="service-card">
           <div class="service-icon">
             <img src="icons/book.png" alt="Special Darshan" />
           </div>
-          <div class="service-label">Donation</div>
+          <div class="service-label" data-i18n="services.donation">Donation</div>
         </a>
 
         <a href="#" class="service-card">
           <div class="service-icon">
             <img src="icons/temple.png" alt="Accommodation" />
           </div>
-          <div class="service-label">About Temple</div>
+          <div class="service-label" data-i18n="services.about">About Temple</div>
         </a>
 
         <a href="#" class="service-card">
           <div class="service-icon">
             <img src="icons/prasad.png" alt="Special Darshan" />
           </div>
-          <div class="service-label">prasad</div>
+          <div class="service-label" data-i18n="services.prasad">prasad</div>
         </a>
 
         <!-- duplicate more -->
@@ -277,40 +246,40 @@ The temple’s spiritual journey began with the tireless efforts and devotion of
 
     <footer class="site-footer">
       <div class="footer-container">
+
         <div class="footer-section">
-          <h4>Temple</h4>
+          <h4 data-i18n="footer.section1.title">Temple</h4>
           <ul>
-            <li><a href="#">About Temple</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Trust & Management</a></li>
+            <li><a href="about.html" data-i18n="footer.section1.link1">About Temple</a></li>
+            <li><a href="#" data-i18n="footer.section1.link2">History</a></li>
+            <li><a href="#" data-i18n="footer.section1.link3">Trust & Management</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4>Services</h4>
+          <h4 data-i18n="footer.section2.title">Services</h4>
           <ul>
-            <li><a href="#">Darshan</a></li>
-            <li><a href="#">Accommodation</a></li>
-            <li><a href="#">Booking</a></li>
+            <li><a href="#" data-i18n="footer.section2.link1">Darshan</a></li>
+            <li><a href="#" data-i18n="footer.section2.link2">Accommodation</a></li>
+            <li><a href="#" data-i18n="footer.section2.link3">Booking</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4>Support</h4>
+          <h4 data-i18n="footer.section3.title">Support</h4>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#" data-i18n="footer.section3.link1">Contact Us</a></li>
+            <li><a href="#" data-i18n="footer.section3.link2">Feedback</a></li>
+            <li><a href="#" data-i18n="footer.section3.link3">FAQ</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        © 2025 Sri Venkateswaraswamy Temple, Kallakuru — All Rights Reserved
-      </div>
+      <div class="footer-bottom" data-i18n="footer.bottom">© 2025 Sri Venkateswaraswamy Temple, Kallakuru — All Rights Reserved</div>
     </footer>
 
     <!-- simple JS for carousel -->
+    <script src="translations.index.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
